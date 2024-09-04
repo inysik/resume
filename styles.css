@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: #0e0c09; 
+    color: #4a4a4a; 
+}
+
+.resume {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-image: url(./img/Rectangle\ 1.png);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #62d47a91; 
+    box-shadow: 0 4px 8px 3px rgba(15, 231, 141, 0.497);
+}
+
+.name {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #529edd9a;
+    margin-bottom: 10px;
+    font-family: 'Yeseva One';
+}
+
+.contact p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #559aeea0; 
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.card {
+    background: linear-gradient(145deg, #ce76c5, #5fbfd0); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(218, 215, 215, 0.15); 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: rgba(230, 180, 160, 0.2); 
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #460c4176; 
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4f4a9a6b; 
+    padding-bottom: 5px;
+    font-family: 'Yeseva One';
+}
+
+p, ul {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Noto Sans', serif;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+a {
+    color: #334867b8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3a3a3a; 
+    text-decoration: underline;
+}
